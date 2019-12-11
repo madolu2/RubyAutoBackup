@@ -44,11 +44,11 @@ def BackupFunc(source_path, target_path, user_action = false)
 end
 
 $mtime = Hash.new #Hash file last change date
-$log_file = "/home/madolu2/RubyAutoBackup/logfile.txt"#Logfile.txt path
+$log_file = ""#Logfile.txt path
 threads = [] #Threads array
 sleep_time = 5*60 #Sleep timer for BackupFunc()
-source_path = "/home/madolu2/RubyAutoBackup/source/"#Ur source directory
-target_path = "/home/madolu2/RubyAutoBackup/target/"#Ur target directory
+source_path = ""#Ur source directory
+target_path = ""#Ur target directory
 
 HashFill(source_path)#Fill $mtime hash
 
